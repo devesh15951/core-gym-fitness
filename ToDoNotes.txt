@@ -1,0 +1,2 @@
+RWD navbar
+RWD Splash image

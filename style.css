@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------- HTML TAG STYLES ----------------------------- */
+
+body{
+        margin: 0;
+        padding: 0;
+}
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5em;
+}
+
+/* -------------------------- PAGE SECTIONS ---------------------------- */
+/* Visual sections of page are defined below in order of presentation */
+
+
+#splash{
+    height:1060px;
+    width: 100%;
+    background: url(images/bckgrnd.jpg) no-repeat center top fixed;
+   	background-size: cover;
+}
+
+#overview{
+	padding:40px 0 60px 0;
+    background-color: #6B6066;
+    font-size: 25px;
+
+}
+
+#statistics{
+    background-color: #FFE5F3;
+    background: url(images/vintagetv.jpg) no-repeat center top fixed;
+   	background-size: cover;
+    font-size: 30px;
+}
+
+#video{
+    background-color: #7EB27C;
+    font-size: 30px;
+}
+
+#footer{
+    background-color: #E6FFE5;
+    padding: 20px 0;
+}
+
+/* ---------------- CONTAINER STYLES ----------------- */
+
+.container {
+  width: 960px; /* static width container always stays at this width no matter what the window size */
+  margin: 0 auto;
+  overflow: hidden;
+}
+.half_container { /* provides a two column presentation */
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+
+/* ----------------- NAVIGATION BAR STYLES -------------------*/
+
+.navbar{
+
+	 /* navbar should always be shown even when page is scrolled */
+  list-style: none;
+  position:fixed;
+  top: 0;
+	width: 100%;
+	height: auto;
+  background-color: #81858c;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+/* horizontal menu bars are typically created using a styled unordered list. Here's how! */
+.navbar ul {
+	margin: 0;
+  padding: 0;
+}
+.navbar ul li {
+  list-style: none;
+  float: left;
+}
+
+.navbar ul li a.button {
+	font-size: 20px;
+	text-decoration: none;
+  color: #63071e;
+	/* this padding defines the size of the buttons */
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+/* change button color when mouse hovers over */
+.navbar ul a.button:hover {
+	background-color: yellow;
+  color: black;
+}
+.navbar ul a.button:active {
+}
+	background-color: yellow;
+
+
+/* ---------------- TITLE PAGE STYLES ------------------- */
+
+#title-page{
+  width: 100%;
+  padding-top: 250px; /* provides a lot of space above title to view the background image */
+  color: #FFE5F3;
+  /*text-align: right;*/
+}
+#title-page h1 {
+  font-family: 'Times New Roman', serif;
+  font-size: 60px;
+  text-shadow: 3px 3px #000; /* Shadow helps text to stand out from background */
+}
+#title-page h3 {
+  font-size: 2.5em;
+  font-style: italic;
+  margin: 0 40px;
+  padding-bottom: 20px;
+  text-shadow: 2px 2px #000;
+
+  /* ------------------- FOOTER CREDITS --------------------- */
+#credits {
+  text-align: center;
+  font-size: 70px;
+}
+#credits table{
+  margin: 0 auto;
+}
+#credits p {
+  font-size: .8em;
+  margin: 10px 0;
+}
+/* ---------------------- MISC -----------------------------*/
+.fltright{
+	float:right;
+	margin: 20px;
+}
+.fltleft{
+	float:left;
+	margin: 20px 20px 20px 0;
+}
+
+/*--------------------- RWD ---------------------------------*/
+@media screen and (max-width: 480px) {
+  #navbar.menu.ul.li{
+    float: none;
+    border-bottom: 2px solid #51484a;
+  }
+  #navbar.responsive {position: relative;}
+  #navbar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  #navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
