@@ -20,13 +20,13 @@ p {
 #splash{
     height:1060px;
     width: 100%;
-    background: url(images/az_ss.jpeg) no-repeat center top fixed;
+    background: url(images/az_ss.jpg) no-repeat center top fixed;
    	background-size: cover;
 }
 
 #overview{
 	padding:40px 0 60px 0;
-    background-color: #6B6066;
+    background-color:#B8E9ED;
     font-size: 25px;
 
 }
@@ -39,7 +39,7 @@ p {
 }
 
 #video{
-    background-color: #7EB27C;
+    background-color: #B8E9ED;
     font-size: 30px;
 }
 
@@ -61,6 +61,11 @@ p {
   overflow: hidden;
 }
 
+
+.box{
+    float:left;
+    margin-right:20px;
+}
 /* ----------------- NAVIGATION BAR STYLES -------------------*/
 
 .navbar{
@@ -69,9 +74,9 @@ p {
   list-style: none;
   position:fixed;
   top: 0;
-	width: 100%;
-	height: auto;
-  background-color: #81858c;
+  width: 100%;
+  height: auto;
+  background-color:#0F5BA6;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -124,11 +129,11 @@ p {
   margin: 0 40px;
   padding-bottom: 20px;
   text-shadow: 2px 2px #000;
+}
 
   /* ------------------- FOOTER CREDITS --------------------- */
 #credits {
   text-align: center;
-  font-size: 70px;
 }
 #credits table{
   margin: 0 auto;

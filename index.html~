@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Food and Workout</title>
+    <title>Core Fitness Gym</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css">
     <link href="media-queries.css" rel="stylesheet" type="text/css">
@@ -36,7 +36,7 @@
 <!-- OVERVIEW SECTION -------------------->
 <section id="overview">
     <div class="container"><!-- Every section uses a container to keep everything aligned and centered  -->
-    	<h1>Alright, Let's Address This</h1>
+    <h1>Alright, Let's Address This</h1>
     <p>Media can be anything ranging from television, radio, movies, newspapers, &amp; more. We basically experience media on a daily basis. For instance, we'll be driving in our car and we'll see a bill board for a car repair shop. We'll be in the grocery line and see magazines about Kim Kardashian and her new baby. Media is in our everyday lives and we really can't avoid it.</p>
     <p>In fact, media is so integrated into our daily lives that we don't even realize the effect that it sometimes has on us. It influences us in such a sneaky way. Media affects the way we dress, the way we socialize, and even the way we perceive men and women. In fact, many people have called out the media for representing women in a negative light. </p>
     <p>There's this lack of feminism in media that still needs to be addressed. When mentioning feminism, burning bras or overpowering men is not the intention. There seems to be a great misunderstanding when the term feminism is mentioned. Feminism is defined as <q>the theory of the political, economic, and social equality of the sexes</q> <cite>Merriam-Webster.</cite> </p>
@@ -62,27 +62,40 @@
 
     <!-- VIDEO SECTION -------------------->
 <section id="video">
-
-		<h1>Punjab Street Food</h1><br>
+    <div class="container">
+		<h1>Ending Gender Stereotypes on TV</h1><br>
         <!-- the below code is provided by YouTube to embedded movies (share > embed) -->
         <!-- include http: in src if previewing on your own computer, remove it when you upload to server -->
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/GStMSkhmYEs" frameborder="0" scrolling="no" width="100%" height="512" align="left" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe><p>&nbsp;&nbsp;&nbsp;</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/LlvqzjDggK0" frameborder="0" scrolling="no" width="100%" height="512" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+		<iframe width="853" height="480" src="https://www.youtube.com/watch?v=GStMSkhmYEs" frameborder="0" allowfullscreen></iframe>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p> <!-- too lazy to add padding-bottom to stylesheet -->
+	</div> <!-- end container -->
 </section>
 
 <!-- FOOTER SECTION -------------------->
 
 <section id="footer">
     <div class="container">
-	     <div id="credits">  <!-- credits id allows for styling of footer content -->
+		<div id="credits">  <!-- credits id allows for styling of footer content -->
             <h1>About the Author</h1>
             <p><img src="images/ct.jpg" width="150" height="130" alt="Portrait of Carelyn Tiburcio"></p>
-            <p>ERP Analyst II with 3 years of experience in extracting and processing big data for business solutions. Extensive development using IBM’s ETL tool Infosphere DataStage along with Oracle’s BI tool for visualization. Technical strengths in HTML, Social Media Analysis, and MongoDB.</p>
-            <p>Copyright, 2019, Devesh Waingankar</p>
-	     </div> <!-- end credits section -->
-   </div> <!-- end container section -->
+            <p>Carelyn Tiburcio is a student at FSU and a huge advocate for female empowerment.</p>
+            <p>Images courtesy of photographers on Unsplash.</p>
+            <p>Color Palette </p>
+
+            <table width="80">
+                <tr>
+                    <td bgcolor="#6B6066">&nbsp;</td>
+                    <td bgcolor="#FFE5F3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td bgcolor="#7EB27C">&nbsp;</td>
+                    <td bgcolor="#E6FFE5">&nbsp;</td>
+                </tr>
+            </table>
+            <p>Copyright, 2018, Carelyn Tiburcio</p>
+		</div> <!-- end credits section -->
+	</div> <!-- end container section -->
 </section> <!-- end footer -->
 
 <!-- JAVASCRIPT CODE -->
