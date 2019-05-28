@@ -11,6 +11,7 @@ p {
   font-size: 20px;
   margin-bottom: 20px;
   line-height: 1.5;
+  float: left;
 }
 
 /* -------------------------- PAGE SECTIONS ---------------------------- */
@@ -25,17 +26,16 @@ p {
 }
 
 #overview{
-	padding:40px 0 60px 0;
     background-color:#B8E9ED;
-    font-size: 25px;
-
+    font-size: 15px;
 }
 
 #statistics{
     background-color: #FFE5F3;
     background: url(images/vintagetv.jpg) no-repeat center top fixed;
    	background-size: cover;
-    font-size: 30px;
+    height: 500px;
+    font-size: 25px;
 }
 
 #video{
@@ -55,17 +55,29 @@ p {
   margin: 0 auto;
   overflow: hidden;
 }
+
+.container h1{
+  font-size: 35px;
+}
+
 .half_container { /* provides a two column presentation */
   width: 50%;
   float: left;
   overflow: hidden;
 }
 
+.youtube{
+  /*margin-left: 220px;*/
+  width: 960px;
+  overflow: hidden;
+}
 
 .box{
     float:left;
     margin-right:20px;
 }
+
+
 /* ----------------- NAVIGATION BAR STYLES -------------------*/
 
 .navbar{
@@ -76,7 +88,7 @@ p {
   top: 0;
   width: 100%;
   height: auto;
-  background-color:#0F5BA6;
+  background-color:#D8E4F0;
   padding-bottom: 20px;
   padding-top: 20px;
 }
@@ -102,12 +114,13 @@ p {
 }
 /* change button color when mouse hovers over */
 .navbar ul a.button:hover {
-	background-color: yellow;
+	background-color: #BCC9D5;
   color: black;
 }
 .navbar ul a.button:active {
+  	background-color: #BCC9D5;
 }
-	background-color: yellow;
+
 
 
 /* ---------------- TITLE PAGE STYLES ------------------- */
