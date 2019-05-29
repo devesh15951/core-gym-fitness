@@ -9,7 +9,6 @@ body{
 }
 p {
   font-size: 20px;
-  margin-bottom: 20px;
   line-height: 1.5;
   float: left;
 }
@@ -25,10 +24,15 @@ h2{
 
 
 #splash{
-    height:1060px;
+    height:550px;
     width: 100%;
-    background: url(images/famjam.jpeg) no-repeat center top fixed;
+    background: url(images/giphy.gif) no-repeat center top fixed;
    	background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 }
 
 #overview{
@@ -36,12 +40,11 @@ h2{
     font-size: 15px;
 }
 
-#statistics{
-    background-color: #FFE5F3;
-    background: url(images/vintagetv.jpg) no-repeat center top fixed;
+#facts{
+    background-color: #0EFFFF;
    	background-size: cover;
-    height: 500px;
-    font-size: 25px;
+
+    font-size: 15px;
 }
 
 #video{
@@ -50,8 +53,11 @@ h2{
 }
 
 #footer{
-    background-color: #E6FFE5;
-    padding: 20px 0;
+    background-color: #0EFFFF;
+}
+
+#footer p{
+  font-size: 12px;
 }
 
 /* ---------------- CONTAINER STYLES ----------------- */
@@ -97,7 +103,7 @@ h2{
   background-color:#D8E4F0;
   padding-bottom: 20px;
   padding-top: 20px;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 /* horizontal menu bars are typically created using a styled unordered list. Here's how! */
 .navbar ul {
@@ -106,7 +112,7 @@ h2{
 }
 .navbar ul li {
   list-style: none;
-  float: left;
+  float: right;
 }
 
 .navbar ul li a.button {
@@ -151,17 +157,6 @@ h2{
   text-shadow: 2px 2px #000;
 }
 
-  /* ------------------- FOOTER CREDITS --------------------- */
-#credits {
-  text-align: center;
-}
-#credits table{
-  margin: 0 auto;
-}
-#credits p {
-  font-size: .8em;
-  margin: 10px 0;
-}
 /* ---------------------- MISC -----------------------------*/
 .fltright{
 	float:right;
