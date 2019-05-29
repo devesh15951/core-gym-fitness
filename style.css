@@ -24,7 +24,7 @@ h2{
 
 
 #splash{
-    height:550px;
+    height:850px;
     width: 100%;
     background: url(images/giphy.gif) no-repeat center top fixed;
    	background-size: cover;
@@ -41,10 +41,12 @@ h2{
 }
 
 #facts{
-    background-color: #0EFFFF;
+    background: url(images/tech.gif) no-repeat center top fixed;
    	background-size: cover;
-
+    height:750px;
+    width: 100%;
     font-size: 15px;
+    color: white;
 }
 
 #video{
