@@ -13,6 +13,12 @@ p {
   line-height: 1.5;
   float: left;
 }
+h2{
+  margin-top: 170px;
+  font-size: 50px;
+  font-family: letterpress;
+  color: white;
+}
 
 /* -------------------------- PAGE SECTIONS ---------------------------- */
 /* Visual sections of page are defined below in order of presentation */
@@ -21,7 +27,7 @@ p {
 #splash{
     height:1060px;
     width: 100%;
-    background: url(images/az_ss.jpg) no-repeat center top fixed;
+    background: url(images/famjam.jpeg) no-repeat center top fixed;
    	background-size: cover;
 }
 
@@ -91,6 +97,7 @@ p {
   background-color:#D8E4F0;
   padding-bottom: 20px;
   padding-top: 20px;
+  opacity: 0.5;
 }
 /* horizontal menu bars are typically created using a styled unordered list. Here's how! */
 .navbar ul {
