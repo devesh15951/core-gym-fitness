@@ -16,7 +16,7 @@
   <div id="container"><!-- container keeps everything aligned and centered no matter what the window size -->
     <div class="navbar"><!--Navigation Bar holds Navigation Buttons -->
       <ul  id="menu">
-        <li><a href="#video" class="button">Contact</a></li>
+        <li><a href="#footer" class="button">Contact</a></li>
      	  <li><a href="#video" class="button">Street Food</a></li>
     	  <li><a href="#facts" class="button">Facts</a></li>
     	  <li><a href="#overview" class="button">About Me</a></li>
@@ -56,12 +56,51 @@
 
     <!-- VIDEO SECTION -------------------->
 <section id="video">
-  <div class="container">
-    <h1>Punjab Street Food</h1><br>
-    <iframe width="450" height="315" src="https://www.youtube.com/embed/GStMSkhmYEs" frameborder="0" scrolling="no" width="100%" height="512" align="left" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe><p>&nbsp;&nbsp;&nbsp;</p>
-    <iframe width="450" height="315" src="https://www.youtube.com/embed/LlvqzjDggK0" frameborder="0" scrolling="no" width="100%" height="512" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </div>
   <br>
+  <div class="slideshow-container">
+
+<div class="mySlides fade">
+    <img src="images/az_ss.jpg" style="width:100%; height:550px">
+</div>
+
+<div class="mySlides fade">
+    <img src="images/famjam.jpeg" style="width:100%; height:550px">
+</div>
+
+<div class="mySlides fade">
+    <img src="images/maxresdefault.jpg" style="width:100%; height:550px">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
 </section>
 
 <!-- FOOTER SECTION -------------------->
@@ -74,34 +113,35 @@
 
           <div class="service-box">
             <div class="service-icon">
-              <i class="fas fa-database"></i>
+              <i class="fab fa-gitlab"></i>
+
             </div>
             <div class="service-title">
-              Recent Comments
+              Latest Projects
             </div>
             <div class="service-desc">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              https: // github.com /devesh15951
             </div>
           </div>
 
         <div class="service-box">
           <div class="service-icon">
-            <i class="fas fa-code"></i>
+            <i class="fab fa-aws"></i>
           </div>
           <div class="service-title">
-            About theme
+            Recent Comments
           </div>
           <div class="service-desc">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            s3.amazonaws.com/hagglebuddy.com/index.html
           </div>
         </div>
 
       <div class="service-box">
         <div class="service-icon">
-          <i class="fab fa-android"></i>
+          <i class="fas fa-database"></i>
         </div>
         <div class="service-title">
-          Latest Projects
+          Contact
         </div>
         <div class="service-desc">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
