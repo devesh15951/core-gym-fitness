@@ -54,13 +54,6 @@ h2{
     font-size: 30px;
 }
 
-#footer{
-    background-color: #0EFFFF;
-}
-
-#footer p{
-  font-size: 12px;
-}
 
 /* ---------------- CONTAINER STYLES ----------------- */
 
@@ -72,12 +65,6 @@ h2{
 
 .container h1{
   font-size: 35px;
-}
-
-.half_container { /* provides a two column presentation */
-  width: 50%;
-  float: left;
-  overflow: hidden;
 }
 
 .youtube{
@@ -136,8 +123,62 @@ h2{
   	background-color: #BCC9D5;
 }
 
-
-
+/* NOTE: Services as Footer */
+.inner-width{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+.section-title{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30px;
+}
+.border{
+  width: 160px;
+  height: 2px;
+  background: #82ccdd;
+  margin: 10px auto;
+}
+.services-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.service-box{
+  max-width: calc(100% /4);
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.service-icon{
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  border: 3px solid;
+  transform: rotate(45deg);
+  margin-bottom: 30px;
+  margin-top: 16px;
+  transition: 0.3s linear;
+}
+.service-icon i{
+  line-height: 70px;
+  font-size: 26px;
+  transform: rotate(-45deg);
+}
+.service-box:hover .service-icon{
+  background: #82ccdd;
+}
+.service-title{
+  font-size: 18px;
+  text-transform:uppercase;
+  margin-bottom: 10px;
+}
+.service-desc{
+  font-size: 14px;
+}
 /* ---------------- TITLE PAGE STYLES ------------------- */
 
 #title-page{
