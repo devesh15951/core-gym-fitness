@@ -8,14 +8,15 @@
     <link href="media-queries.css" rel="stylesheet" type="text/css">
     <link href='font-family: "Times New Roman", Times, serif;' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
 <section id="splash">
-  <div id="container"><!-- container keeps everything aligned and centered no matter what the window size -->
-    <div class="navbar"><!--Navigation Bar holds Navigation Buttons -->
+    <div class="navbar" id="myTopnav"><!--Navigation Bar holds Navigation Buttons -->
       <ul  id="menu">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
         <li><a href="#footer" class="button">Contact</a></li>
      	  <li><a href="#video" class="button">Street Food</a></li>
     	  <li><a href="#facts" class="button">Facts</a></li>
@@ -23,11 +24,9 @@
         <li><a href="#splash" class="button">Home</a></li>
     	</ul>
     </div> <!-- end navbar -->
-  </div><!--end container -->
-<!--  <div id="title-page"--> <!--- Used to style the title and subtitle -->
-  <div class="container" align="Left">
-      <h2>Work in progress </h2>
-  </div> <!-- end container -->
+    <div class="container" align="Left">
+        <h2>Work in progress </h2>
+    </div> <!-- end container -->
 </section>
 
 <!-- OVERVIEW SECTION -------------------->
@@ -48,7 +47,6 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
     </div> <!-- end container -->
 </section> <!-- end STATISTICS section-->
 
@@ -58,49 +56,22 @@
 <section id="video">
   <br>
   <div class="slideshow-container">
-
-<div class="mySlides fade">
-    <img src="images/az_ss.jpg" style="width:100%; height:550px">
-</div>
-
-<div class="mySlides fade">
-    <img src="images/famjam.jpeg" style="width:100%; height:550px">
-</div>
-
-<div class="mySlides fade">
-    <img src="images/maxresdefault.jpg" style="width:100%; height:550px">
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span>
-  <span class="dot"></span>
-  <span class="dot"></span>
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
+    <div class="mySlides fade">
+        <img src="images/az_ss.jpg" style="width:100%; height:550px">
+    </div>
+    <div class="mySlides fade">
+        <img src="images/famjam.jpeg" style="width:100%; height:550px">
+    </div>
+    <div class="mySlides fade">
+        <img src="images/maxresdefault.jpg" style="width:100%; height:550px">
+    </div>
+  </div>
+  <br>
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
 </section>
 
 <!-- FOOTER SECTION -------------------->
@@ -124,33 +95,33 @@ function showSlides() {
             </div>
           </div>
 
-        <div class="service-box">
-          <div class="service-icon">
-            <i class="fab fa-aws"></i>
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fab fa-aws"></i>
+            </div>
+            <div class="service-title">
+              Recent Comments
+            </div>
+            <div class="service-desc">
+              s3.amazonaws.com/hagglebuddy.com/index.html
+            </div>
           </div>
-          <div class="service-title">
-            Recent Comments
-          </div>
-          <div class="service-desc">
-            s3.amazonaws.com/hagglebuddy.com/index.html
-          </div>
-        </div>
 
-      <div class="service-box">
-        <div class="service-icon">
-          <i class="fas fa-database"></i>
-        </div>
-        <div class="service-title">
-          Contact
-        </div>
-        <div class="service-desc">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </div>
+          <div class="service-box">
+            <div class="service-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <div class="service-title">
+              Contact
+            </div>
+            <div class="service-desc">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </div>
+
       </div>
-
     </div>
   </div>
-</div>
 </section>
 
 
@@ -159,14 +130,45 @@ function showSlides() {
 <script src="js/jquery.js"></script>
 <!-- Scrolling navigation script by Geo Miller glmiller@pic.fsu.edu -->
 <script type='text/javascript'>
-jQuery(document).ready(function () {
+  jQuery(document).ready(function () {
   jQuery('.button').click(function() {
     targetName = jQuery(this).attr('href');
     targetLocation = jQuery(targetName).offset().top;
     jQuery('html, body').animate({scrollTop:targetLocation}, 'slow');
     return false;
+    });
   });
-});
+</script>
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+  }
 </script>
 
 

@@ -124,6 +124,14 @@ img {vertical-align: middle;}
 .navbar ul a.button:active {
   	background-color: #BCC9D5;
 }
+.navbar .icon {
+  display: none;
+}
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
 
 /* NOTE: Services as Footer */
 .inner-width{
